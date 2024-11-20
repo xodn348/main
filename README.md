@@ -80,18 +80,3 @@ Blockchain and Web3 are not just technologies—they are the future of trust, tr
 - **Description**: Created a block scheduling system for Engineering Academy.
 - **Technology**: Ruby on Rails, Heroku.
 
----
-
-## 📸 Visuals
-
-### 🌐 Blockchain Ecosystem
-![Blockchain Ecosystem](https://miro.medium.com/max/1400/1*U36fqG8PjMoXySGGhNrQJA.jpeg)
-
-### 🔗 Decentralized Ledger Concept
-![Decentralized Ledger](https://miro.medium.com/max/1400/1*78lk5lfYcEZMIPBZVBUgcw.png)
-
----
-
-## 🚀 Let's Connect!
-
-I'm always looking to collaborate on innovative blockchain and Web3 projects. Feel free to reach out! 😊
