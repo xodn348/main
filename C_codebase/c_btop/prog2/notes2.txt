@@ -1,0 +1,49 @@
+# Program Name: Chapter 2_First Steps in Programming
+===============================
+
+## Overview
+# variable
+- "This whole idea of entering different information each time you run a program is key to the whole enterprise of programming. "
+- variables are used to store information
+- data stores in Main memory or RAM
+- ROM =The information contained in ROM was put there when the machine was manufactured(Basic Input/Output System(BIOS) /ex. display, hard disk drive, key board, floppy disk drive)
+- RAM = where your programs and data are stored when they execute.(either the box is full when it represents 1 or the box is empty when it represents 0.)
+- each byte has been labeled with a number(This label for a byte is called its address)
+
+# memory in your computer
+- 1 is true, 0 is false
+- 1 kilobyte (or 1KB) is 1,024 bytes.(1024 = 2^10 / 18bits)
+- 1 megabyte (or 1MB) is 1,024 kilobytes, which is 1,048,576 bytes.(1024^2 = 2^20 / 28bits)
+- 1 gigabyte (or 1GB) is 1,024 megabytes, which is 1,073,741,841 bytes.(1024^3 = 2^30 / 38bits)
+- The reason is this: there are 1,024 numbers from 0 to 1,023, and 1,023 happens to be 10 bits that are all 1 in binary: 11 1111 1111, which is a very convenient binary value.
+- "=" is an assignment operator / variable = value
+- An argument is a value that’s passed to a function.
+- %d = conversion specifier
+
+# variable name
+- variable declaration first, then assignment
+- A variable name can’t include any other characters besides letters, underscores, and digits
+- variable names are case sensitive
+
+# Arithmetic Operation
+"int Cats = 2;"
+- This statement declares the variable Cats as type int and sets its initial value to 2.
+
+- The variable on the left of the assignment is called an lvalue, because it is a location that can store a value. The value that results from executing the expression on the right of the assignment is called an rvalue because it is simply a value that results from evaluating the expression.
+
+printf("\nI have eaten %d cookies. There are %d cookies left",
+eaten, cookies);
+- I put the rest of the statement on a new line. You can spread statements out like this to make them easier to read or fit within a given width on the screen.
+
+# unary operator
+- operator that operates on a single operand(only one sign like + or -)
+
+# variable and memory
+- variable size depends on the compiler
+
+    Table 2-3. Type Names for Integer Variable Types
+    signed char 1   128 to +127
+    short int 2     32,768 to +32,767
+    int 4          2,147,438,648 to +2,147,438,647    
+    long int 4     2,147,438,648 to +2,147,438,647    
+    long long int 8 9,223,372,036,854,775,808 to +9,223,372,036,854,775,807
