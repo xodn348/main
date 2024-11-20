@@ -14,7 +14,7 @@ I'm currently pursuing my M.S. in Computer Science at Texas A&M University, wher
 
 ## 🏆 Highlights
 
-- **Blockchain Expertise**: Hands-on experience with Ethereum, Solidity, and smart contract development.
+- **Blockchain Expertise**: Hands-on experience with Bitcoin Core, Ethereum, Solidity, and smart contract development.
 - **Tech Consulting**: Audited IT systems and internal controls for major financial organizations at Ernst & Young.
 - **Finance Background**: Deep understanding of financial services, including IT risk advisory and K-GAAP/K-IFRS.
 - **Certifications**: USCPA, CISA (Candidate), CISSP (Associate).
@@ -24,7 +24,7 @@ I'm currently pursuing my M.S. in Computer Science at Texas A&M University, wher
 ## 💻 Skills
 
 - **Programming**:
-  - **Languages**: C, C++, Python, Ruby
+  - **Languages**: C, C++, Python, Ruby, Solidity
   - **Frameworks**: Ruby on Rails
 - **Blockchain**: Bitcoin Core, Ethereum, Smart Contracts, Tokenomics
 - **Finance**: K-GAAP/K-IFRS, Internal Auditing, Financial Due Diligence
