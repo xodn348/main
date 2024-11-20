@@ -1,0 +1,40 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Movies" %>
+
+<h1>Movies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th class="<%= 'sorted-column' if params[:sort] == 'title' %> <%= 'asc' if params[:sort] == 'title' && params[:direction] == 'asc' %> <%= 'desc' if params[:sort] == 'title' && params[:direction] == 'desc' %>">
+        <%= link_to "Title", movies_path(sort: 'title', direction: toggle_direction('title')) %>
+        <%= sort_indicator('title') %>
+      </th>
+      <th class="<%= 'sorted-column' if params[:sort] == 'rating' %> <%= 'asc' if params[:sort] == 'rating' && params[:direction] == 'asc' %> <%= 'desc' if params[:sort] == 'rating' && params[:direction] == 'desc' %>">
+        <%= link_to "Rating", movies_path(sort: 'rating', direction: toggle_direction('rating')) %>
+        <%= sort_indicator('rating') %>
+      </th>
+      <th class="<%= 'sorted-column' if params[:sort] == 'release_date' %> <%= 'asc' if params[:sort] == 'release_date' && params[:direction] == 'asc' %> <%= 'desc' if params[:sort] == 'release_date' && params[:direction] == 'desc' %>">
+        <%= link_to "Release Date", movies_path(sort: 'release_date', direction: toggle_direction('release_date')) %>
+        <%= sort_indicator('release_date') %>
+      </th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <% @movies.each do |movie| %>
+      <tr id="<%= dom_id movie %>">
+        <td><%= movie.title %></td>
+        <td><%= movie.rating %></td>
+        <td><%= movie.release_date %></td>
+        <td>
+          <%= link_to "Show this movie", movie %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to "New movie", new_movie_path(sort: params[:sort], direction: params[:direction]) %>

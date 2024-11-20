@@ -1,0 +1,73 @@
+/* Style for highlighting the sorted column */
+.sorted-column {
+    background-color: lightyellow;
+    font-weight: bold;
+  }
+  
+  /* Ascending sort color */
+  .sorted-column.asc {
+    background-color: lightgreen;
+    color: darkgreen;
+  }
+  
+  /* Descending sort color */
+  .sorted-column.desc {
+    background-color: lightcoral;
+    color: darkred;
+  }
+  
+  /* Style for table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  /* Style the header */
+  th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+  
+  /* Additional styles to improve overall look */
+  h1 {
+    font-family: 'Arial', sans-serif;
+    color: darkblue;
+  }
+  
+  body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  p {
+    margin: 10px 0;
+    font-size: 1.1em;
+  }
+  
+  /* Style for new movie link */
+  a.new-movie-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  a.new-movie-link:hover {
+    background-color: #0056b3;
+  }
+  
+  
