@@ -1,22 +1,97 @@
-<h1 align="center">Hi 👋, I'm Jun</h1>
-<h3 align="center">Software developer who is into Blockchain and Web3 stuff</h3>
+# 🌟 Junhyuk Lee - Blockchain & Web3 Enthusiast 🌟
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=xodn348&label=Profile%20views&color=0e75b6&style=flat" alt="xodn348" /> </p>
+**📧 Email**: [xodn348@gmail.com](mailto:xodn348@gmail.com)  
+**🔗 LinkedIn**: [Junhyuk Lee](https://www.linkedin.com/in/junhyuk-lee-352932145/)  
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=xodn348" alt="xodn348" /></a> </p>
+---
 
-- 🔭 I’m currently working on **Writing Bitcoin Script**
+## 🛠️ About Me
 
-- 📫 How to reach me **xodn348@gmail.com**
+Hi there! 👋 I'm Junhyuk Lee, a passionate **Blockchain Developer** and **Web3 Enthusiast** with a solid background in **software development**, **finance**, and **tech consulting**. 
+I'm currently pursuing my M.S. in Computer Science at Texas A&M University, where I'm exploring how blockchain and Web3 technologies are shaping the future of ledgers and decentralized systems.
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/junhyuk-lee-352932145/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/junhyuk-lee-352932145/" height="30" width="40" /></a>
-</p>
+---
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.ruby-lang.org/en/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg" alt="ruby" width="40" height="40"/> </a> </p>
+## 🏆 Highlights
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=xodn348&show_icons=true&locale=en&layout=compact" alt="xodn348" /></p>
+- **Blockchain Expertise**: Hands-on experience with Ethereum, Solidity, and smart contract development.
+- **Tech Consulting**: Audited IT systems and internal controls for major financial organizations at Ernst & Young.
+- **Finance Background**: Deep understanding of financial services, including IT risk advisory and K-GAAP/K-IFRS.
+- **Certifications**: USCPA, CISA (Candidate), CISSP (Associate).
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=xodn348&show_icons=true&locale=en" alt="xodn348" /></p>
+---
+
+## 💻 Skills
+
+- **Programming**:
+  - **Languages**: C, C++, Python, Ruby
+  - **Frameworks**: Ruby on Rails
+- **Blockchain**: Bitcoin Core, Ethereum, Smart Contracts, Tokenomics
+- **Finance**: K-GAAP/K-IFRS, Internal Auditing, Financial Due Diligence
+- **Languages**: Fluent in English and Korean
+
+---
+
+## 🏅 Education
+
+- 🎓 **Texas A&M University** (M.S. in Computer Science, Aug 2024 – Current)
+- 🎓 **KAIST College of Business** (Digital Finance Mastership Program, Spring 2022)
+- 🎓 **Dankook University** (B.A. in International Business Administration, 3.93/4.5 GPA)
+
+---
+
+## 🌟 Achievements
+
+- **Scholarships & Awards**: 
+  - Competitive Scholarship at Texas A&M University
+  - Excellence Prize for Blockchain Team Project at KAIST
+  - Full Merit-Based Scholarship at Dankook University
+
+- **Professional Highlights**:
+  - Senior Consultant at Ernst & Young (Tech Risk for Financial Services)
+  - Staff Accountant at Woori & Bakertilly Accounting Corporation
+
+---
+
+## 🌌 My Passion for Blockchain & Web3
+
+Blockchain and Web3 are not just technologies—they are the future of trust, transparency, and decentralization. I believe these innovations will revolutionize industries by creating a fairer and more efficient world. 🌐✨
+
+---
+
+## 📈 GitHub Stats
+
+![Junhyuk's GitHub stats](https://github-readme-stats.vercel.app/api?username=junhyuklee&show_icons=true&theme=radical)  
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=junhyuklee&layout=compact&theme=radical)
+
+---
+
+## 🌟 Featured Projects
+
+### 1. **Blockchain-Based Referral Marketing (KAIST)**
+- **Description**: Developed a blockchain-based referral marketing system using tokenomics.
+- **Technology**: Solidity, AWS Ubuntu, Ethereum Virtual Machine.
+
+### 2. **Smart Contract Standardization**
+- **Description**: Standardized smart contract deployment for scalability and reliability.
+- **Technology**: Ethereum, Python.
+
+### 3. **Class Scheduling App (Texas A&M)**
+- **Description**: Created a block scheduling system for Engineering Academy.
+- **Technology**: Ruby on Rails, Heroku.
+
+---
+
+## 📸 Visuals
+
+### 🌐 Blockchain Ecosystem
+![Blockchain Ecosystem](https://miro.medium.com/max/1400/1*U36fqG8PjMoXySGGhNrQJA.jpeg)
+
+### 🔗 Decentralized Ledger Concept
+![Decentralized Ledger](https://miro.medium.com/max/1400/1*78lk5lfYcEZMIPBZVBUgcw.png)
+
+---
+
+## 🚀 Let's Connect!
+
+I'm always looking to collaborate on innovative blockchain and Web3 projects. Feel free to reach out! 😊
