@@ -1,0 +1,170 @@
+# Program Name: Chapter 2_First Steps in Programming
+===============================
+
+## Overview
+# variable
+- "This whole idea of entering different information each time you run a program is key to the whole enterprise of programming. "
+- variables are used to store information
+- data stores in Main memory or RAM
+- ROM =The information contained in ROM was put there when the machine was manufactured(Basic Input/Output System(BIOS) /ex. display, hard disk drive, key board, floppy disk drive)
+- RAM = where your programs and data are stored when they execute.(either the box is full when it represents 1 or the box is empty when it represents 0.)
+- each byte has been labeled with a number(This label for a byte is called its address)
+
+# memory in your computer
+- 1 is true, 0 is false
+- 1 kilobyte (or 1KB) is 1,024 bytes.(1024 = 2^10 / 18bits)
+- 1 megabyte (or 1MB) is 1,024 kilobytes, which is 1,048,576 bytes.(1024^2 = 2^20 / 28bits)
+- 1 gigabyte (or 1GB) is 1,024 megabytes, which is 1,073,741,841 bytes.(1024^3 = 2^30 / 38bits)
+- The reason is this: there are 1,024 numbers from 0 to 1,023, and 1,023 happens to be 10 bits that are all 1 in binary: 11 1111 1111, which is a very convenient binary value.
+- "=" is an assignment operator / variable = value
+- An argument is a value that’s passed to a function.
+- %d = conversion specifier
+
+# variable name
+- variable declaration first, then assignment
+- A variable name can’t include any other characters besides letters, underscores, and digits
+- variable names are case sensitive
+
+# Arithmetic Operation
+"int Cats = 2;"
+- This statement declares the variable Cats as type int and sets its initial value to 2.
+
+- The variable on the left of the assignment is called an lvalue, because it is a location that can store a value. The value that results from executing the expression on the right of the assignment is called an rvalue because it is simply a value that results from evaluating the expression.
+
+printf("\nI have eaten %d cookies. There are %d cookies left",
+eaten, cookies);
+- I put the rest of the statement on a new line. You can spread statements out like this to make them easier to read or fit within a given width on the screen.
+
+# unary operator
+- operator that operates on a single operand(only one sign like + or -)
+
+# variable and memory
+- variable size depends on the compiler
+
+    Table 2-3. Type Names for Integer Variable Types
+    signed char 1   128 to +127
+    short int 2     32,768 to +32,767
+    int 4          2,147,438,648 to +2,147,438,647    
+    long int 4     2,147,438,648 to +2,147,438,647    
+    long long int 8 9,223,372,036,854,775,808 to +9,223,372,036,854,775,807
+
+# constant(2 ways)
+- #define PI 3.14159f > sequence of characters
+- const float PI = 3.14159f; > literal constant
+
+ # Prog 2.13
+ Notice that you use %ld to output the total stock sold. This is to tell the compiler that it is to use a long conversion for the output of this value. Just to check the program, calculate the result of the revenue yourself with a calculator.
+
+# casting(convering value to another type)
+ In C you have the ability to explicitly convert a value of one type to another type. This process is called casting.
+
+# Implicit Casting
+- it works on the basis that the operand with the type that has the more restricted range of values will be converted to the type of the other operand
+- Type int is more limited in its range than type float(ex. int to float)
+
+# rank of types
+The unsigned integer types are ranked from low to high in the following sequence: signed char,short,int,long,long long.
+the signed integer operand is converted to the unsigned integer type.
+
+# Ex. how to convert variable type in the expression
+double price = 10.0; long count = 5L;
+float ship_cost = 2.5F; int discount = 15;
+/* Product price per unit */ /* Number of items */ /* Shipping cost per order */ /* Discount as percentage */
+long double total_cost = (count*price + ship_cost)*((100L - discount)/100.0F);
+This declares the four variables that you see and computes the total cost of an order from the values set for these variables. I chose the types primarily to demonstrate implicit conversions, and these types would not represent a sensible choice in normal circumstances. Let’s see what happens in the last statement to produce the value for total_cost:
+1. count*priceisevaluatedfirstandcountwillbeimplicitlyconvertedtotypedoubletoallow the multiplication to take place and the result will be of type double. This results from the second rule.
+2. Nextship_costisaddedtotheresultofthepreviousoperationand,tomakethispossible, the value of ship_cost is converted to the value of the previous result, type double. This con- version also results from the second rule.
+3. Next, the expression 100L - discount is evaluated, and to allow this to occur the value of discount will be converted to type long, the type of the other operand in the subtraction. This is a result of the fourth rule and the result will be type long.
+4. Next,theresultofthepreviousoperation(oftypelong)isconvertedtotypefloattoallow the division by 100.0F (of type float) to take place. This is the result of applying the third rule, and the result is of type float.
+5. The result of step 2 is divided by the result of step 4, and to make this possible the float value from the previous operation is converted to type double. This is a consequence of applying the third rule, and the result is of type double.
+6. Finally,thepreviousresultisstoredinthevariabletotal_costasaresultoftheassignment operation. An assignment operation always causes the type of the right operand to be con- verted to that of the left when the operand types are different, regardless of the types of the operands,sotheresultofthepreviousoperationisconvertedtotypelong double.Nocompiler warning will occur because all values of type double can be represented as type long double.
+
+
+# range of types
+- The range of values for an unsigned type is from 0 to 2^n – 1, where n is the number of bits in the type.
+- The range of values for a signed type is from –2^(n–1) to 2^(n–1) – 1, where n is the number of bits in the type.
+
+# unsigned values(1byte = 8 bits)
+- With unsigned values, the leftmost bit is a sign bit, 
+so –128 is the binary value 1000 0000, 
+0 is 0000 0000, and 
+127 is 0111 1111. 
+- The value 1111 1111 as a signed binary value is the decimal value –1.
+
+# Character constant
+char letter = 'A';
+char digit = '9';
+char exclamation = '!';
+char newline = '\n';
+char tab = '\t';
+char single_quote = '\'';
+
+# ASCII
+char character = 74; /* ASCII code for the letter J */
+char letter = 'C'; /* letter contains the decimal code value 67 */
+letter = letter + 3; /* letter now contains 70, which is 'F' */
+
+# The Character Type
+As an unsigned type, the value stored in a variable of type char can
+range from 0 to 255. As a signed type, a variable of type char can store values from –128 to +127. 
+Of course, both ranges correspond to the same set of bit patterns: from 0000 0000 to 1111 1111. 
+With unsigned values, all eight bits are data bits, so 0000 0000 corresponds to 0, and 1111 1111 corresponds to
+255. 
+With signed values, the leftmost bit is a sign bit, so 
+–128 = 1000 0000 
+0 = 00000000
+127 = 0111 1111
+-1 = 1111 1111
+
+# arithmetic operations on the point of computer
+Thus, from the point of view of representing character codes, which are bit patterns, it doesn’t
+matter whether type char is regarded as signed or unsigned. Where it does matter is when you perform
+arithmetic operations on values of type char.
+
+# Character constants
+char letter = 'A';
+char digit = '9';
+char exclamation = '!';
+char letter = 'C';  /* letter contains the decimal code value 67 */
+letter = letter + 3; /* letter now contains 70, which is 'F' */
+
+# printf of character
+printf("The character is %c and the code value is %d", ch, ch);
+This statement will output the value in ch as a character and as a numeric value.
+
+# wide character type
+wchar_t w_ch = L'A';
+
+wchar_t wch = 0;
+scanf("%lc", &wch);
+printf("You entered %lc", wch);
+
+enumeration = 열거
+
+# enumeration
+Variables of type Weekday can have any of the values
+specified by the names that appear between the braces that follow the type name. These names are
+called enumerators or enumeration constants 
+
+# value initialization
+enum Weekday today = Wednesday;
+This declares a variable with the name today and it initializes it to the value Wednesday. Because
+the enumerators have default values, Wednesday will correspond to the value 2
+
+# enumeration with multiple variables
+enum Weekday {Monday, Tuesday, Wednesday, Thursday,Friday, Saturday, Sunday} today = Monday, tomorrow = Tuesday;
+enum Weekday {Monday, Tuesday, Wednesday, Thursday,Friday, Saturday, Sunday} today = Monday, tomorrow = today + 1;
+
+# enumeration with explicit values
+enum Weekday {Monday=1, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday};
+Now the enumerators Monday through Sunday will correspond to values 1 through 7. 
+
+# Boolean type
+_Bool valid = 1; /* Boolean variable initialized to true */
+If bool had been chosen as the type name, any program that used the name bool for some purpose most probably would not compile
+with a compiler that supported bool as a built-in type.
+or, 
+#include <stdbool.h>
+_Bool valid = 1;
+
+** complex conjugate = 켤레복소수
