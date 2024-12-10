@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# README
-https://rottenpotatoe-0c3e4c3b9ba3.herokuapp.com/movies
-=======
 # 🌟 Junhyuk Lee - Blockchain & Web3 Enthusiast 🌟
 
 **📧 Email**: [xodn348@gmail.com](mailto:xodn348@gmail.com)  
