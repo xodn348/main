@@ -167,4 +167,66 @@ or,
 #include <stdbool.h>
 _Bool valid = 1;
 
+# complex number
 ** complex conjugate = 켤레복소수
+** conjugate = 켤레, 짝을 맞추다
+
+#include <complex.h>
+double complex z1 = 2.0 + 3.0 * I;
+or
+double complex z1 = 2.0 + 3.0 * _Complex_I;
+
+# complex number function(casting)
+double real_part = creal(z1); /* Get the real part of z1 */
+double imag_part = cimag(z1); /* Get the imaginary part of z1 */
+
+
+crealf() = float complex value 
+cimgf() = float complex value
+creall() = long double complex value 
+cimgl() = long double complex value
+
+Casting an imaginary value to a complex type produces a complex number with a zero real part
+and a complex part the same as the imaginary number. Casting a value of an imaginary type to a real
+type other than _Bool results in 0. Casting a value of an imaginary type to type _Bool results in 0 for a
+zero imaginary value, and 1 otherwise.
+
+# op=  form(+,-,*,/,%)
+number += 10;
+number -= 10;
+number *= 10;
+number /= 10;
+number %= 10;
+
+# equivalent(left-hand side, right-hand side)
+lhs op= rhs;
+lhs = lhs op (rhs);
+
+# Math function
+floor(x) Returns the largest integer that isn’t greater than x as type double
+ceil(x) Returns the smallest integer that isn’t less than x as type double
+fabs(x) Returns the absolute value of x
+log(x) Returns the natural logarithm (base e) of x
+log10(x) Returns the logarithm to base 10 of x
+exp(x) Returns the value of ex
+sqrt(x) Returns the square root of x
+pow(x) Returns the value xy
+sin(x) Sine of x expressed in radians
+cos(x) Cosine of x
+tan(x) Tangent of x
+
+ex) 
+double x = 2.25;
+double less = 0.0;
+double more = 0.0;
+double root = 0.0;
+less = floor(x); /* Result is 2.0 */
+more = ceil(x); /* Result is 3.0 */
+root = sqrt(x); /* Result is 1.5 */
+
+# Desigining program
+1. initial specification of the problem, 
+2. analyzing the problem, 
+3. preparing a solution, 
+4. writing the program, 
+5. running the program and testing
