@@ -1,0 +1,56 @@
+/* Ch3 Make decisions */
+
+# if statement
+if(expression)
+Statement1;
+=
+if(expression) Statement1;
+
+# if boolean expression
+if(count)
+printf("The value of count is not zero.");
+// This will only produce output if count is not 0, because a 0 value for count will mean the if
+expression is false.//
+
+#Nested if statements
+if(expression1) /* Weather is good? */
+{
+    StatementA; /* Yes - Go out in the yard */
+    if(expression2) /* Cool enough? */
+        StatementB; /* Yes - Sit in the sun */
+    else
+        StatementC; /* No - Sit in the shade */
+}
+else
+    StatementD; /* Weather not good - stay in */
+Statement E; /* Drink lemonade in any event */
+
+# More relational operators
+atements. These three additional operators make up the complete set:
+• >= is greater than or equal to
+• <= is less than or equal to
+• != is not equal to
+
+# char type reminder
+'Z' >= 'A' 'Q' <= 'P' 'B' <= 'b' 'B' != 66
+With the ASCII values of the characters in mind, the first expression is true, because 'Z', which
+has the code value 90, comes after 'A', which has the code value 65. The second is false, as 'Q'
+doesn’t come before 'P'. The third is true. This is because in ASCII code lowercase letters are 32
+higher than their uppercase equivalents. The last is false. The value 66 is indeed the decimal ASCII
+representation for the character 'B'.
+
+# tolower(), toupper()
+#include <ctype.h>
+
+# towlower(), towupper()
+#include <wctype.h>
+
+# Logical operators
+1. && (AND)
+Test1 && Test2 
+
+2. || (OR)
+Test1 || Test2
+
+3. ! (NOT)
+!Test1
