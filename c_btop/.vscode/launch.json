@@ -15,8 +15,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/junhyuklee/Desktop/1. TAMU/0. Texas A&M/0. Material/4. Project/GitHub/C_codebase/c_btop/prog3",
-      "program": "/Users/junhyuklee/Desktop/1. TAMU/0. Texas A&M/0. Material/4. Project/GitHub/C_codebase/c_btop/prog3/build/Debug/outDebug"
+      "cwd": "/Users/junhyuklee/Desktop/1. TAMU/0. Texas A&M/0. Material/4. Project/GitHub/C_codebase/c_btop",
+      "program": "/Users/junhyuklee/Desktop/1. TAMU/0. Texas A&M/0. Material/4. Project/GitHub/C_codebase/c_btop/build/Debug/outDebug"
     }
   ]
 }

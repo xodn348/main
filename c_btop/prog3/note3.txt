@@ -54,3 +54,74 @@ Test1 || Test2
 
 3. ! (NOT)
 !Test1
+
+# Conditional operator
+condition (?,>, <, >=, <=, ==, !=) expression1 : expression2
+
+# Operator precedence
+Age >= 25 && Harvard || Yale
+Unfortunately, this will result in howls of protest because you’ll now accept Yale graduates who
+are under 25. In fact, this statement will accept Yale graduates of any age. 
+
+# if, else if, else
+if(expression1)
+    Statement1;
+else if(expression2)
+    Statement2;
+else if(expression3)
+    Statement3;
+else
+    Statement4;
+
+iteration ends when the condition is true. 
+If statement1 is true, statement2,3,4 are not executed.
+If all statements are false, statement4 is executed.
+IF statement4 is false, null is executed.
+
+# switch statment
+switch(ticket_number)
+{
+    case 35:
+        printf("Congratulations! You win first prize!");
+        break;
+    case 122:
+        printf("Congratulations! You win second prize!");
+        break;
+    case 78:
+        printf("Congratulations! You win third prize!");
+        break;
+    default:
+        printf("Too bad, you lose.");
+}       
+
+ticket_number is a variable that holds the number of the ticket.
+break statement is to skip over the other statements within that block(closing brace).
+If the value of ticke_number differs from every one of the case values, the statements foloowing default are executed.
+The case values must all be constant expressions.
+case values must be integer and unique.(including enumeration)
+
+# isalpha() in switch statement (ctype.h)
+return non-zero integer if the character is a alphabetic character.
+return 0 if the character is not a alphabetic character.
+
+ex)
+if(!isalpha(ch))
+printf("The character is not a letter.");
+else
+{
+switch(tolower(ch))
+
+# goto statement
+if(dice == 6)
+    goto Waldorf;
+else
+    goto Jail; 
+
+Waldorf:
+    comfort = high;
+    ...
+Jail: 
+    comfort = low;
+    ...
+
+avoid too many goto statements.
