@@ -124,4 +124,33 @@ Jail:
     comfort = low;
     ...
 
-avoid too many goto statements.
+avoid too many goto statements. code will be tangled hard.
+
+# Bitwise operators(all of them are integer type)
+& AND
+| OR
+^ XOR
+~ NOT(flips operand bits/1's complement)
+<< left shift
+>> right shift
+
+** Exclusive OR = 1 if one of operands is different, otherwise 0.
+
+# 1's complement
+= ~x(flipping all bits)
+
+# 2's complement
+= ~x + 1(the rightmost bit is 1)
+
+# shift operators
+>> right shift
+1. unsigned value
+introduce 0 on the left
+
+2. signed value
+introduce 1 on the left, but on some computer it is 0
+
+# op= bitwise operators
+ex) 
+lhs op= rhs;
+lhs = lhs op (rhs)
