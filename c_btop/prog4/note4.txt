@@ -1,0 +1,32 @@
+# Ch4.Loops
+
+# for loop
+int count;
+for(count = 1 ; count <= 10 ; ++count)
+    printf("\n%d", count);
+or
+count = 1;
+for(; count <= 10; ++count)
+    printf("\n%d", count);
+
+1. count =1 is execut4ed only once at the first.(first control expresstion)
+2. count <= 10 is evaluated before each loop and it must be a logical expression(second control expression)
+second control expression iterates until it gets false.
+3. ++count 
+
+# multiple variables in for loop
+for(int i = 1, j = 2 ; i<=5 ; i++, j = j+2)
+printf("\n %5d", i*j);
+
+# prefix and postfix
+1. prefix : ++ count
+2. postfix : count++
+3, use parenthesis like this
+x = (a++) + b;
+y = a + (++b);
+
+ex) postfix(count variable add first, then add 1)
+total = 6 + count++;
+is same as 
+total = 6 + count;
+++count;
