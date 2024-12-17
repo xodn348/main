@@ -30,3 +30,66 @@ total = 6 + count++;
 is same as 
 total = 6 + count;
 ++count;
+
+# pseudo-random integers
+rand() : for a given seed then sequence will always be the same.
+srand() : true random number generator(initailize the sequence with a particular seed )
+
+# time()
+returns the number of seconds that have elapsed since Jan 1, 1970.
+
+# get random number
+srand(time(NULL)); /* Use clock value as starting seed */
+int chosen = 0;
+chosen = rand(); /* Set to a random integer 0 to RAND_MAX */
+
+# Loop control
+for(int n = 1 ; n<20 ; n += 2)
+or
+for(int n = 1 ; n<20 ; sum += n, n += 2)
+
+# floating-point loop 일때는 ending에 = 쓰지말것(binary number는 fractional 반영못함)
+
+# for loop and while loop
+for : execute until conditional expression is to be true.
+while : execute until conditional expression is to be false.
+
+# Nested loop while
+the inner loos completes all its iterations for each iteration of the outer group.
+(outer loop's iteration = inner loop's iteration)
+
+for(int i = 0 ; i<10 ; ++i)
+for(int j = 0 ; j<20 ; ++k) /* Loop executed 10 times 
+for(int k = 0 ; k<30 ; ++k) /* Loop executed 10x20 times */
+                            /* Loop body executed 10x20x30 times */
+{ 
+statement block
+}
+
+# Do-While Loop
+execute at least once and then check the condition.
+ex) 
+do
+    Statement;
+while(expression);
+
+# CR, LF
+Carriage Return (CR, \r, ASCII code 13):
+On a typewriter, pressing the carriage return key moved the print head back to the start of the current line (the "carriage" returned to the beginning). In a computing context, the CR character moves the cursor to the beginning of the line without moving it down to a new line.
+
+Line Feed (LF, \n, ASCII code 10):
+On a typewriter, the line feed would advance the paper up one line, moving the typing position down. In computing, the LF character moves the cursor down one line, but not back to the start of the line.
+
+# Loop summary
+1. For loop : 
+The for loop, which you typically use for counting loops where the value of a control variable
+is incremented or decremented by a given amount on each iteration until some final value
+is reached.
+
+2. While loop : 
+The while loop, which you use when the loop continues as long as a given condition is true.
+If the loop condition is false at the outset, the loop block will not be executed at all.
+
+3. Do-while loop : 
+The do-while loop, which works like the while loop except that the loop condition is checked
+at the end of the loop block. Consequently the loop block is always executed at least once.
