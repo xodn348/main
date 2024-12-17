@@ -1,0 +1,24 @@
+# ch5. Arrays
+Array = [element1, element2, element3, ...]
+element can be int, float, long.
+
+index value = 0, 1, 2, 3..(offset = distance from the)
+index value should be valid integer in arrays.
+ex) when not pick up valid integer,
+At best you’ll just pick up a junk value from somewhere so that the results are incorrect and may vary from one run to the next. 
+At worst the program may overwrite something important and lock up your computer so a reboot becomes necessary.
+
+The offset is essentially the difference (or distance) between the index of a particular element and the index of the first element.
+
+# memory recap
+For long variables:
+a: 0x16fdff190
+b: 0x16fdff188 (190 - 8 = 188)
+c: 0x16fdff180 (188 - 8 = 180)
+For double variables:
+d: 0x16fdff178 (180 - 8 = 178)
+e: 0x16fdff170 (178 - 8 = 170)
+f: 0x16fdff168 (170 - 8 = 168)
+
+1. The stack grows downward in memory (from high addresses to low addresses)
+2. Variables are typically allocated in the order they're declared
