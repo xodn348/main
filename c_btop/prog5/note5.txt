@@ -22,3 +22,18 @@ f: 0x16fdff168 (170 - 8 = 168)
 
 1. The stack grows downward in memory (from high addresses to low addresses)
 2. Variables are typically allocated in the order they're declared
+
+# Assigning values to arrays
+1. If there are fewer initializing values than elements, the elements without initializing values will be set to 0. 
+ex)
+double values[5] = { 1.5, 2.5, 3.5 };
+values[4] = 0.0;
+
+2. you don't have to supply size of array.
+int primes[] = { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29};
+
+3. finding the size of array
+printf("\nThe size of value is %d bytes.", sizeof value);
+
+4. Assigning size of value to variable
+int value_size = sizeof value;
