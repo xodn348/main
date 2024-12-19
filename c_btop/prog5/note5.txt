@@ -37,3 +37,32 @@ printf("\nThe size of value is %d bytes.", sizeof value);
 
 4. Assigning size of value to variable
 int value_size = sizeof value;
+
+5. multidimensional arrays
+float carrots[25][50]; = 25 rows of 50 floating-point elements.
+
+ex) 2 dimensional array
+int numbers[3][4] = 
+{
+    { 10, 20, 30, 40 }, 
+    { 15, 25, 35, 45 }, 
+    { 47, 48, 49, 50 } 
+};
+
+ex) 3 dimensional array
+/* [level, braces][row][column] */ 
+int numbers[2][3][4] = 
+{
+    { /* First block of 3 rows */
+        { 10, 20, 30, 40 },
+        { 15, 25, 35, 45 },
+        { 47, 48, 49, 50 }
+    },
+    { /* Second block of 3 rows */
+        { 10, 20, 30, 40 },
+        { 15, 25, 35, 45 },
+        { 47, 48, 49, 50 }
+    }
+};
+
+** circumference = 둘레
