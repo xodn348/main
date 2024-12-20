@@ -1,0 +1,22 @@
+# ch6 Applications with strings and text
+1. 
+\ : back slash(escape character)
+\0 : null character(not to be confused with NULL, and you write it as \0.)
+
+2. 
+char saying[20];
+The variable saying that you’ve declared in this statement can accommodate a string that has
+up to 19 characters, because you must allow one element for the termination character.
+
+3. 
+const char message[] = "The end of the world is nigh";
+printf("\nThe message is: %s", message);
+This technique for defining standard messages is particularly useful if they’re used in various places within a program
+
+4. 
+while(str1[count])
+count++;
+
+The ASCII code value for the '\0' character is zero which corresponds to the Boolean value false. All other
+ASCII code values are nonzero and therefore correspond to the Boolean value true. Thus the loop will continue as
+long as str1[count] is not '\0', which is precisely what you want.
