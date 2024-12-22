@@ -20,3 +20,19 @@ count++;
 The ASCII code value for the '\0' character is zero which corresponds to the Boolean value false. All other
 ASCII code values are nonzero and therefore correspond to the Boolean value true. Thus the loop will continue as
 long as str1[count] is not '\0', which is precisely what you want.
+
+5. strcpy(): copy str2 to str1
+strcpy(str1, str2);
+
+strncpy(): copy n characters from str2 to str1
+strncpy(str1, str2, n);
+
+6. strlen(): return the length of the string(excluding the null character '\0')
+strlen(str);
+size_t needs <stddef.h> / unsigned int
+
+7. strcat(): concatenate str2 to the end of str1
+strcat(str1, str2);
+
+8. strncat(): concatenate n characters from str2 to the end of str1
+strncat(str1, str2, n);
