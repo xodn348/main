@@ -36,3 +36,36 @@ strcat(str1, str2);
 
 8. strncat(): concatenate n characters from str2 to the end of str1
 strncat(str1, str2, n);
+
+9. pointer : variable that contains the address of another variable
+char* = pointer to char
+
+cf) avoid crash
+if(pGot_char != NULL)
+printf("Character found was %c.", *pGot_char);
+
+10. strchr() : search for the first occurrence of a character in a string
+strchr(str, c);
+
+strrchr() : search for the last occurrence of a character in a string
+strrchr(str, c);
+
+11. strstr() : search for the first occurrence of a string within another string
+strstr(str1, str2);
+
+12. strcmp() : compare two strings
+strcmp(str1, str2);
+
+13. gets() : read a string from the keyboard
+gets(str);
+
+cf)
+scanf() : accept input from the keyboard, but it interprets a space as the end of an input value. 
+gets() : it will read all the characters up to the Enter key. stores as string and appends '0 automatically.
+
+reading from a file
+if(gets(buffer) == NULL)
+{
+    printf("Error reading input.");
+    return 1; /* End the program */
+}
