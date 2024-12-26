@@ -1,0 +1,57 @@
+CH7. Pointer
+1. 
+pointer : variable that contains the address of another variable
+address : first bite of the variable
+compiler must know the type of the variable to which the pointer points
+* : indirection operator, deference operator
+
+ex) type int*, type char*, type float*, type double*
+type void can store any type of address but it has to be casted to the correct type(ex.malloc())
+
+pointer should be initialized to NULL
+#define <stddef.h>, <stdlib.h>, <string.h>, <time.h>, <wchar.h>, <locale.h>
+
+2. 
+variable declaration must precede pointer declaration.
+
+3. 
+variable's address : &variable(%p)
+variable's value : %d
+
+pointer's address : &pointer(%p)
+pointer's value : %p
+
+*pchar = variable's value
+
+4. ++*pnum or (*pnum)++
+
+5. num1, num2 with same pointer
+pointer's address is not changed but its value is changed.
+
+Pointer details:
+- Address where pointer is stored (address of pnum): 0x16fdff180
+- size of pointer: 8 bytes
+- Value stored in pointer (address of num1): 0x16fdff190
+- Value pointed to (*pnum): 2
+
+Pointer details:
+- Address where pointer is stored (address of pnum): 0x16fdff180
+- size of pointer: 8 bytes
+- Value stored in pointer (address of num2): 0x16fdff188
+- Value pointed to (*pnum): 4
+
+6. pvalue = &value in scanf
+
+7. 
+- pointer to constant(pointer가 가리키는 값이 고정/ 변수를 통해 직접 값을 변경하거나 변수의 주소를 바꿀수는 있음)
+const long *pvalue = &value;
+
+- constant pointer(pointer가 가리키는 주소가 고정)
+long *const pvalue = &value;
+
+- fix address and fix value
+const long *const pvalue = &value;
+
+
+
+
