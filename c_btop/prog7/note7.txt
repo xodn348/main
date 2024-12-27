@@ -65,5 +65,7 @@ multiple[5] = i *(p+5) = i      &multiple[5] = 0x16fdff18d p+5 = 0x16fdff18d
 multiple[6] = n *(p+6) = n      &multiple[6] = 0x16fdff18e p+6 = 0x16fdff18e
 multiple[7] = g *(p+7) = g      &multiple[7] = 0x16fdff18f p+7 = 0x16fdff18f
 
+9. multiple dimensional array(i x j)
+*(*board + i) = board[0][0] to board[i][j]    
 
 
