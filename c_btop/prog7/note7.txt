@@ -68,4 +68,28 @@ multiple[7] = g *(p+7) = g      &multiple[7] = 0x16fdff18f p+7 = 0x16fdff18f
 9. multiple dimensional array(i x j)
 *(*board + i) = board[0][0] to board[i][j]    
 
+10. 
+heap : dynamic memory allocation
+stack : static memory allocation to function arguments and local variables
+
+<stdlib.h>
+malloc() : allocate memory
+int *pNumber = (int *)malloc(100);
+
+ex) error handling with shortage of memory
+if(pNumber == NULL)
+{
+/*Code to deal with no memory allocated */
+}
+
+11. prime numbers under 100(25 units)
+2 3 5 7 11
+13 17 19 23 29
+31 37 41 43 47
+53 59 61 67 71
+73 79 83 89 97
+
+11. memory leak : memory allocated but not freed because you are unalble to release the memory
+
+12. free(pnumber) : free the memory allocated by malloc(), calloc(), realloc() / pointer of any type
 
