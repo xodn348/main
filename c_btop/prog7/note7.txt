@@ -93,3 +93,4 @@ if(pNumber == NULL)
 
 12. free(pnumber) : free the memory allocated by malloc(), calloc(), realloc() / pointer of any type
 
+13. realloc(pnumber, 100) : reallocate the memory allocated by malloc(), calloc(), realloc() / pointer of any type
