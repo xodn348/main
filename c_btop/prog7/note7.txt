@@ -94,3 +94,19 @@ if(pNumber == NULL)
 12. free(pnumber) : free the memory allocated by malloc(), calloc(), realloc() / pointer of any type
 
 13. realloc(pnumber, 100) : reallocate the memory allocated by malloc(), calloc(), realloc() / pointer of any type
+
+14. avoid allocating lots of small amounts of memery. Allocating memory carries some overhead.
+do not overwrite the pointer of the memory befoe you have already freed > memory leak
+
+15. 
+getchar() : read a character and return it as an int
+putchar() : write a character and return it as an int
+
+16. 
+Arrays of pointers 
+char *pS[3] = { NULL };
+
+buffer:   [H][e][l][l][o][\0][W][o][r][l][d][\0][H][i][\0]...
+pS[0] ----↑
+pS[1] ---------------↑
+pS[2] -------------------------------↑
