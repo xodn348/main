@@ -52,17 +52,17 @@ int main(void)
             if(input[index] =='+' || input[index] == '-')
             *(number_string+number_length++) = *(input+index++);
 
-            /* Check all following digits*/
+            /* Copy all following digits*/
             for( ; isdigit(*(input+index)) ; index++)
             *(number_string+number_length++) = *(input+index);
 
-            /* copy any fractional part*/
+            /* Copy any fractional part*/
             if(*(input+index)=='.')
             {/* Yes so copy the decimal point and the following digits */
-            *(number_string+number_length++) = *(input+index++);
-            
-            for( ; isdigit(*(input+index)); index++)
-                *(number_string+number_length++) = *(input+index);                   
+                *(number_string+number_length++) = *(input+index++);
+                // Get fraction digits
+                for( ; isdigit(*(input+index)); index++)
+                    *(number_string+number_length++) = *(input+index);                   
             }
             *(number_string+number_length) = '\0';
 
@@ -72,6 +72,7 @@ int main(void)
             if(number_length>0)
                 result = atof(number_string);
         }
+
         /* Now look for 'op number' combinattions */ 
         for(;index < input_length;)
         {
