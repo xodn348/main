@@ -110,3 +110,20 @@ buffer:   [H][e][l][l][o][\0][W][o][r][l][d][\0][H][i][\0]...
 pS[0] ----↑
 pS[1] ---------------↑
 pS[2] -------------------------------↑
+
+17. 
+gets() : read a string from stdin(including the newline character)
+fgets() : read a string from stdin with a maximum length(excluding the newline character)
+
+pS[i] = (char*)malloc(pbuffer-buffer);  // Allocate memory in heap
+
+18. how to locate memory in malloc()
+// Example memory layout:
+Stack:                    Heap:
++--------------+         +----------------+
+| buffer[128]  |         | "Hello\0"      | ← pS[0] (e.g., 0x7f8a12)
+| pS[100]      |--→     +----------------+
+|              |         | "World\0"      | ← pS[1] (e.g., 0x7f8b24)
++--------------+         +----------------+
+                        | "Hi\0"         | ← pS[2] (e.g., 0x7f8c36)
+                        +----------------+

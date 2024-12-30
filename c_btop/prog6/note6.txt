@@ -52,6 +52,7 @@ strrchr(str, c);
 
 11. strstr() : search for the first occurrence of a string within another string
 strstr(str1, str2);
+cf) case sensitive
 
 12. strcmp() : compare two strings
 strcmp(str1, str2);

@@ -26,7 +26,9 @@ int main(void)
         }
 
         /* Check for buffer capacity exceeded */
-        if((index == BUFFER_LEN) && ((*(pbuffer+index-1) != '\0') || (i<2)))
+        if((index == BUFFER_LEN) &&                  // Condition 1: Buffer is full
+           ((*(pbuffer+index-1) != '\0') ||         // Condition 2: Last char isn't null
+            (i<2)))                                 // Condition 3: Not finished with all 3 strings
         {
             printf("\nYou ran out of space in the buffer.");
             return 1;
