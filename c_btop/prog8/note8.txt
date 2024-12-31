@@ -1,0 +1,43 @@
+ch8. Structuring your program
+
+1. variable scope and lifetime
+Variables exist only within the block in which they’re defined.
+The variables declared at the beginning of an outer block also exist in the inner block
+
+automatic variables : Variables that are created when they’re declared and destroyed at the end of a block 
+variable’s scope : The extent within the program code where a given variable is visible and can be referenced
+
+2. two ways to receive information back
+a. procide an address of a variable to a function and get a value back
+b. get a return value from a function(return value)
+
+3. general form of a function
+Return_type Function_name( Parameters - separated by commas )
+{
+    Statements;
+}
+
+cf) 
+1. if there is no return value, return_type is void
+2.A function that returns a value can, and usually does, participate in an expression. For example
+ex) result = 2.0*sqrt(2.0);
+
+4. Naming function: start with capital letter when naming standard library functions
+ex) Findlast, Explosion
+
+5. void * type : return an address value but with no specified type.
+
+6. 
+printf stores data(argument) in the ROM(string literals) and printf gets this address.
+dynamic data is stored in the heap(malloc, calloc, realloc)
+other functions store data in the stack(automatic variables)
+
+RAM:                          ROM:
++------------------+         +------------------+
+| Stack:           |         | Code Segment:    |
+| - input[]        |         | - program code   |
+| - number_string[]|         +------------------+
++------------------+         | Read-Only Data:  |
+| Heap:            |         | - string literals |
+| - dynamic data   |         | - constants      |
++------------------+         +------------------+
