@@ -41,3 +41,28 @@ RAM:                          ROM:
 | Heap:            |         | - string literals |
 | - dynamic data   |         | - constants      |
 +------------------+         +------------------+
+
+7. pass-by-value mechanism
+a. pass-by-value : copy the value of the argument into the function parameter(variable lifetime 이후에도 남아있음)
+b. pass-by-reference : copy the address of the argument into the function parameter
+cf) variable value can be change only through pass by reference.
+if you want to make it unchanged, use const *pvariable
+
+
+8. write like first. same effect but latter compiler would allocate some memoty and it is hard to find.
+
+    value3 = average(value1, value2);
+        printf("\nThe average is: %f\n", value3);
+
+    printf("\nThe average is: %f", average(value1, value2));
+
+9. function declaration = function prototype
+
+10. pointer to pointer : when you use pointer's array, you need to pass pointer to pointer.(**pointer)
+P   = &pS[i]    // Pointer to pointer (address of pointer)
+*P  = pS[i]     // Pointer (points to string)
+**P = *pS[i]    // String (actual characters)
+
+ex) 
+char *pS[NUM_P];     // Array of pointers
+str_in(&pS[count])   // Pass pointer to pointer

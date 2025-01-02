@@ -20,3 +20,5 @@ int main(void)
     printf("\nThe average is: %f\n", value3);
     return 0;
 }
+
+/* average function will have copies of value1 and value2 */
