@@ -1,0 +1,64 @@
+Ch9. More on functions
+- Pointer to function
+- use static variable in function
+- share variables between functions
+- functions call themselves without resulting in an indefinite loop
+- write an Othello-type game
+
+1.  pointer to function vs pointer to data
+    1. Memory Location:
+    Data Pointer:   Points to RAM (Stack/Heap)
+    Function Pointer: Points to Code Segment (ROM)
+    
+    2. Modification:
+    Data Pointer:   *pData = 20;        // Can modify data
+    Function Pointer: pFunc = newFunc;   // Can only change which function to point to
+
+    3. Arithmetic: 
+    Data Pointer:   pData++;    // Valid: moves to next data item
+    Function Pointer: pFunc++;  // Invalid: cannot do pointer arithmetic
+
+    4. Usage:
+    Data Pointer:   Used to access/modify data
+    Function Pointer: Used for callbacks and dynamic function selection
+
+    /* Initialize pointers to functions */
+    {
+    pfun[0] = sum;
+    pfun[1] = product;
+    pfun[2] = difference;
+    }
+    or 
+    int (*pfun[3])(int, int) = { sum, product, difference };
+    int (*pfun[])(int, int) = { sum, product, difference };
+
+2. static variable : 
+    1. it does not got detroyed when the function is exited(like global variable)
+    2. initailization occur only once < > automatic variable occur everytime
+    3. exist only in the scope of the function
+
+            RAM (Read/Write Memory):
+            +------------------------+
+            | Stack:                 |
+            | - Local variables     |
+            +------------------------+
+            | Heap:                 |
+            | - Dynamic memory      |
+            +------------------------+
+            | Data Segment:         |
+            | - Static variables    | ← Static vars here
+            | - Global variables    |
+            | - Initialized data    |
+            +------------------------+
+
+            ROM (Read-Only Memory):
+            +------------------------+
+            | Code Segment:          |
+            | - Program code        |
+            | - String literals     |
+            | - Const data         |
+            +------------------------+
+
+
+3. 
+
