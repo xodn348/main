@@ -59,6 +59,5 @@ Ch9. More on functions
             | - Const data         |
             +------------------------+
 
-
-3. 
+3. Global variable : sharing variables between functions
 
