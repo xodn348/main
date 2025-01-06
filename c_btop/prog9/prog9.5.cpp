@@ -9,7 +9,6 @@ void test2(void);
 
 int main(void)
 {
-    int count = 0;
 
     for( ; count < 5; count++)
     {
@@ -19,13 +18,13 @@ int main(void)
     return 0;
 }
 
-/* Function test1 with automatic variable */
+/* Function test1 with automatic variable - global count */
 void test1(void)
 {
     printf("\ntest1     count = %d", ++count);
 }
 
-/* Function test1 with automatic variable */
+/* Function test1 with automatic variable - local static count*/
 void test2(void)
 {
     static int count;

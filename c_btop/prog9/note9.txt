@@ -59,5 +59,54 @@ Ch9. More on functions
             | - Const data         |
             +------------------------+
 
-3. Global variable : sharing variables between functions
+3. 
+Global variable : sharing variables between functions
+static variable :  initailied only once and exist only in the scope of the function
+local variable : exist only in the scope of the function
 
+4. recursion : 
+    - function call itself without resulting in an indefinite loop
+
+5. functions with a variable number of arguments
+#include <stdarg.h>
+void va_start(va_list parg, last_fixed_arg);
+type va_arg(va_list parg, type);
+void va_end(va_list parg);
+ 
+ex) double average( double v1, double v2,... until sentinel(0.0))
+{
+    code to go here...
+}
+
+6. main function command line arguments
+ex) program.c
+
+# Command line:
+$ ./program hello world(all command-line arguments are string)
+
+# In program:
+argv[0] = "./program"    // Program name
+argv[1] = "hello"        // First argument
+argv[2] = "world"        // Second argument
+argc = 3                 // Number of arguments (including program name)
+
+# Memory layout:
+argv --→ [ptr] --→ "./program\0"
+         [ptr] --→ "hello\0"
+         [ptr] --→ "world\0"
+         [NULL]
+
+agrv = argument vector
+argc = argument count
+
+7. end of program
+#include <stdlib.h>
+abort(); : terminate program abnormally immediately
+exit(0); : terminate program gracefully
+return 0; : terminate program gracefully
+
+8. Enhancing performance
+    1. how short function calls are compiled
+    : short function calls are compiled as inline code
+    2. use of pointer
+    : restrict keyword
