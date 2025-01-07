@@ -1,0 +1,41 @@
+ch.10 Essential Input and Output Operations
+
+1. operating system and C library function
+will hancdle I/O operations
+
+2. Input stream and output stream
+
+3. text stream and binary stream
+
+4. Standard streams
+stdio : standard input output
+stdout : standard output
+stderr : standard error(can't be redirected to another device)
+stdprn : standard printer
+stdaux : standard auxiliary
+
+5. input from the keyboard
+    1. formatted input : scanf() > format specifier
+        ex) 
+        scanf("%lf", &variable);
+        or
+        char str[] = "%lf";
+        scanf(str, &variable);
+        
+        ex) scanf disregards leading whitespace(only recognize ' ', \t, \n)
+        ex) scanf(%[a-z]) : a-z 사이의 문자를 입력받음
+        ex) scanf(%[^,]) : , 제외한 문자를 입력받음
+
+    2. unformatted input : getchar()
+
+6. 
+%x : hexadecimal ( 4 bits represent 1 hex digit )
+%o : octal ( 3 bits represent 1 octal digit )
+%d : decimal
+%[] : only read characters in the set(including spaces)
+%l[] : only read long characters in the set
+%[^] : only read characters not in the set
+%[aeiou] : only read vowels in string
+%[^aeiou] : only read consonants in string
+" %c" : ignore leading whitespace however it has
+
