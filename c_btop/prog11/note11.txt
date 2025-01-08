@@ -1,0 +1,38 @@
+ch11. Structuring data
+• What structures are
+• How to declare and define data structures
+• How to use structures and pointers to structures
+• How you can use pointers as structure members
+• How to share memory between variables
+• How to define your own data types
+• How to write a program that produces bar charts from your data
+
+1. structure : a collection of data items of different types as a single unit
+
+type is horse and structure.
+age, height are structure members.
+Silver is instance of horse.
+ex)
+struct horse
+{
+    int age;
+    int height;
+    char name[20];
+    char father[20];
+    char mother[20];
+};
+
+struct horse Dobbin = {
+                    24, 17,"Dobbin", "Trigger", "Flossie"};
+
+or 
+struct horse Piebald, Bandy;
+
+2. Accessing structure members
+Dobbin.age = 12;
+Dobbin.height = 15;
+strcpy(Dobbin.name, "Dobbin");
+strcpy(Dobbin.father, "Trigger");
+strcpy(Dobbin.mother, "Flossie");
+
+period(.) is called member selection operator.
