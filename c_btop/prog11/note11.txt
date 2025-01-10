@@ -36,3 +36,113 @@ strcpy(Dobbin.father, "Trigger");
 strcpy(Dobbin.mother, "Flossie");
 
 period(.) is called member selection operator.
+
+3. pointer to structure
+struct horse *ptr;
+ptr = &Dobbin;
+
+(*ptr).age = 12;
+or
+ptr->age = 12; (pointer to member)
+
+
+4. Dynumic memory allocation for structure
+    struct horse *phorse[50];
+    phorse[hcount] = (struct horse*) malloc(sizeof(struct horse));
+    free(phorse[hcount]);
+cf) bounary alignment
+: variable stores at the begining of the address which are multiple of 2 for 2 bytes, 4 for 4 bytes, 8 for 8 bytes
+
+
+5. structure as members of a structure(date as a member of horse)
+struct Date
+{
+    int day;
+    int month;
+    int year;
+};
+
+struct horse
+{
+    struct Date dob;
+    int height;
+    char name[20];
+    char father[20];
+    char mother[20];
+};
+
+Dobbin.dob.day = 5;
+Dobbin.dob.month = 12;
+Dobbin.dob.year = 1962;
+
+cf) linked list
+: a sequence of data items, each containing a pointer to the next data item in the sequence.
+first > current > previous(linked by "next" structure member)
+
+struct horse *first = NULL; /* Pointer to first horse */
+struct horse *current = NULL; /* Pointer to current horse */
+struct horse *previous = NULL; /* Pointer to previous horse */
+
+cf) doubly linked list
+
+6. Bit-Fields in a Structure
+: a way to store data in a structure using a fixed number of bits for each member.
+
+7. structure vs pointer to structure as a function argument
+
+- structure
+bool siblings(struct family member1, struct family member2)
+{
+    if(strcmp(member1.mother, member2.mother) == 0)
+        return true;
+    else
+        return false;
+}
+
+- pointer to structure
+bool siblings(struct family *member1, struct family *member2)
+{
+    if(strcmp(member1->mother, member2->mother) == 0)
+        return true;
+    else
+        return false;
+}
+
+- pointer to structure(const / for protecting data)
+constant data: bool siblings(struct family const *pmember1, struct family const *pmember2)
+constant pointer: bool siblings(struct family *const pmember1, struct family *const pmember2)
+
+8. structure as a function return value
+struct horse my_fun(void)
+
+9. Binary Tree
+: a tree data structure in which each node has at most two children, referred to as its left child and its right child.
+
+ex) 
+Visual Representation:
+
+       50          // Root node
+      /  \         // Branches: / for left, \ for right
+     30   70       // Level 1: left < parent < right
+    /  \  / \      // Level 2: follows same rule
+   20  40 60 80    // Level 3: leaf nodes (no children)
+
+ex)code
+struct Node
+{
+    long item; /* The data item */
+    int count; /* Number of copies of item */
+    struct Node *pLeft; /* Pointer to left node */
+    struct Node *pRight; /* Pointer to right node */
+};
+
+struct Node *createnode(long value)
+{
+    /* Allocate memory for a new node */
+    struct Node *pNode = (struct Node *)malloc(sizeof(struct Node));
+    pNode->item = value;                                    /* Set the value */
+    pNode->count = 1;                                       /* Set the count */
+    pNode->pLeft = pNode->pRight = NULL;                    /* No left or right nodes */
+    return pNode;
+}
+
