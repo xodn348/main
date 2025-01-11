@@ -146,3 +146,17 @@ struct Node *createnode(long value)
     return pNode;
 }
 
+10. sharing memory
+union: a data type that allows you to store different data types in the same memory location.
+
+11. typedef
+: a keyword in C that allows you to create a new name for an existing data type.
+ ex) 
+ typedef struct pts
+{
+    int x;
+    int y;
+    int z;
+} Point;
+
+Point my_pt;
