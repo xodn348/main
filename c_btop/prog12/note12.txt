@@ -1,0 +1,89 @@
+Ch12. Working with Files
+• What a file is in C
+• How files are processed
+• How to write and read formatted files and binary files
+• How to retrieve data from a file by direct random access to the information
+• How to use temporary work files in a program
+• How to update binary files
+• How to write a file viewer program
+
+
+- Text file
+1. File stream
+: a sequence of bytes in memory that represents a file.
+    ex) text file(seris of characters), binary file(seris of bytes), etc.
+
+
+2. file pointer
+: open a file and return a pointer to the file stream.(1 pointer at a file)
+    ex)FILE *fopen(char *name, char *mode);
+
+3. file mode
+: a string that specifies the mode in which the file is opened.
+    ex) with double quotes, working only with character strings.
+    "r" for reading, 
+    "w" for writing, 
+    "a" for appending, 
+    "r+" for reading and writing, etc.
+
+4. file stream
+: a sequence of bytes in memory that represents a file.
+
+5. fopen
+: open a file and return a pointer to the file stream.(max 5 files at a time)
+    ex)FILE *fopen(char *name, char *mode);
+
+6. fclose
+: close a file.
+    ex)int fclose(FILE *stream);
+    cf) EOF : end of file(value -1)
+    cf) fflush() : flush the buffer to the file
+
+7. remove
+: delete a file.
+    ex)int remove(char *name);
+
+8. rename
+: rename a file.
+    ex)int rename(char *oldname, char *newname);
+
+9. fputs() vs fputc()
+: write a string to a file. 
+    ex)int fputs(char *str, FILE *stream);
+    ex)int fputc(int c, FILE *stream);
+
+10. fgets() vs fgetc()
+: read a string from a file.
+    ex)char *fgets(char *str, int n, FILE *stream);
+    ex)int fgetc(FILE *stream);
+
+11. fprintf() vs fscanf()
+: write a formatted string to a file.(formatted input/output, start with pointer parameter)
+    ex)fprintf(pfile, "%12d%12d%14f", num1, num2, fnum1);
+    ex)fscanf(pfile, "%12d%12d%14f", &num1, &num2, &fnum1);
+
+12. rewind()
+: move the file pointer/current position to the beginning of the file.
+    ex)rewind(pfile);
+
+13. fflush()
+: flush the buffer to the file.(write <> read)
+    ex)fflush(pfile);
+
+14. fseek()
+: move the file pointer to the specified position.
+    ex)fseek(pfile, 0L, SEEK_SET);
+
+- Binary file(written in hexadecimal number)
+1. wb vs rb vs ab
+: write, read, append
+
+2. fread()
+: read a binary file.
+    ex)fread(pfile, sizeof(int), 1, pfile);
+
+3. fwrite()
+: write a binary file.
+    ex)char *filename = "myfile.bin";
+        FILE *pfile = fopen(filename, "wb");
+    
