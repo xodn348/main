@@ -1,0 +1,132 @@
+Ch13. Supporting Facilities
+• More about the preprocessor and its operation
+• How to write preprocessor macros
+• What logical preprocessor directives are and how you can use them
+• What conditional compilation is and how you can apply it
+• More about the debugging methods that are available to you
+• How you use some of the additional library functions available
+
+- preprocessor
+1. they are not involved in the execution of the program.
+2. they are executed before the compilation.
+
+- Header Files(<>between angled brackets)
+1. #include <stdio.h> : search the default header file directory
+2. #include "myfile.h" : search the current directory and then the default header file directory
+3. header files : containing all the function prototypes and type declarations
+4. external files : containing the actual code for the functions(when it is globally declared)
+    ex) extern int number;
+        extern double in_to_mm(double);
+
+- Define Directives
+5. Define directives
+ex1) #define PI 3.14159265 : define a constant
+ex2) #define MAXLEN 256
+    char *buffer[MAXLEN];
+    char *str[MAXLEN];
+
+6. Macro Directives(multiple parameterized substitution)
+ex) #define Print(My_var) printf("%d", Myvar)
+
+ex2) #define product(m, n) m*n
+    result = product(x, y + 1);
+    result = x*y + 1;
+    >> wroing result
+
+    #define product(m, n) ((m)*(n))
+    >> correct result
+
+7. Conditional Compilation
+ex) #if defined(DEBUG)
+    printf("Debugging is on\n");
+#endif
+
+8. Preprocessor Directives on Multiple Lines("\" continutation character)
+ex) #define min(x, y) \
+            ((x)<(y) ? (x) : (y))
+
+9. joining two result
+ex) #define join(x, y) x##y
+
+- Logical Preprocessor Directives
+ex) #if !defined block1
+    #define block1
+    /* Block of code you do not */
+    /* want to be repeated. */
+    #endif
+ex) #ifdef = #if defined
+    #ifndef = #if !defined
+
+10. Directives testing
+ex1) #if CPU == Pentium4
+    printf("\nPerformance should be good." );
+    #endif
+
+ex2) #if CPU == Pentium4
+    printf("\nPerformance should be good." );
+    #else
+    printf("\nPerformance may not be so good." );
+    #endif
+
+11. Date and Time
+    ex) #include <time.h>
+        time_t now;
+        time(&now);
+        printf("The current date and time is %s", ctime(&now));
+        __DATE__ : Mmm dd yyyy hh:mm:ss(Jan 31 2004 12:34:56)
+        __TIME__ : hh:mm:ss(compilation time)
+    
+    ex2) printf("\nProgram last compiled at %s on %s", __TIME__, __DATE__ );
+
+12. Debugging
+    1. Tracing program flow
+        : execute one source statement at a time
+    2. Setting breakpoints
+        : stop execution at a specific point in the program
+    3. Setting watches
+        : monitor the value of a specific variable
+    4. Inspecting program elements
+        : examine the value of a specific variable
+
+13. assert() macros
+    : check for errors in the program
+    ex) assert(funsel<element_count);
+        Assertion failed: funsel<element_count, file d:\examples\program13_01.c, line    44
+
+    switch off assert()
+        : #define NDEBUG            /* Switch off assertions */
+        : #undef NDEBUG            /* Switch on assertions */
+
+14. Time and Date
+clock() returns the processor time used by the program
+time() returns the current calendar time
+
+    ex1) #include <time.h>
+        clock_t start, end;
+        double cpu_time;
+        start = clock();
+        
+        /* Execute the process for which you want the processor time */
+        end = clock();
+        cpu_time = (double)(end-start)/CLOCKS_PER_SEC;
+        
+    ex2) time_t time(time_t *timer);
+        : return the current calendar time(from Jan 1, 1970)
+
+    ex3) double difftime(time_t T2, time_t T1);
+        : return the difference in seconds between T2 and T1
+
+15.ctime()
+    : convert time_t to a string
+    ex) 
+    char *ctime(const time_t *timer);
+    time_t calendar = 0;
+    calendar = time(NULL); /* Store calendar time */
+    printf("\n%s", ctime(&calendar)); /* Output calendar time as date string */
+
+    "Mon Aug 25 10:45:56 2003\n\0"
+
+
+    ex) printf("The current date and time is %s", ctime(&now));
+
+
