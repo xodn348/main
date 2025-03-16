@@ -1,11 +1,4 @@
-    "                    "    mmmm   mmmm 
-  mmm   m mm   m mm    mmm   #"  "m "   "#
-    #   #"  #  #"  #     #   #m  m#     m"
-    #   #   #  #   #     #    """ #   m"  
-    #   #   #  #   #     #   "mmm"  m#mmmm
-    #                    #                
-  ""                   ""   
----
+
 
 ## 🏆 Highlights
 
