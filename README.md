@@ -1,15 +1,10 @@
-# 🌟 Junhyuk Lee - Blockchain & Web3 Enthusiast 🌟
-
-**📧 Email**: [xodn348@gmail.com](mailto:xodn348@gmail.com)  
-**🔗 LinkedIn**: [Junhyuk Lee](https://www.linkedin.com/in/junhyuk-lee-352932145/)  
-
----
-
-## 🛠️ About Me
-
-Hi there! 👋 I'm Junhyuk Lee, a passionate **Blockchain Developer** and **Web3 Enthusiast** with a solid background in **software development**, **finance**, and **tech consulting**. 
-I'm currently pursuing my M.S. in Computer Science at Texas A&M University, where I'm exploring how blockchain and Web3 technologies are shaping the future of ledgers and decentralized systems.
-
+    "                    "    mmmm   mmmm 
+  mmm   m mm   m mm    mmm   #"  "m "   "#
+    #   #"  #  #"  #     #   #m  m#     m"
+    #   #   #  #   #     #    """ #   m"  
+    #   #   #  #   #     #   "mmm"  m#mmmm
+    #                    #                
+  ""                   ""   
 ---
 
 ## 🏆 Highlights
